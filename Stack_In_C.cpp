@@ -40,6 +40,7 @@ void push(){
 		int e;
 		printf("Enter Element to Insert:");
 		scanf("%d",&e);
+		printf("Inserted Element is %d\n",e);
 		t++;
 		stack[t]=e;
 	}
@@ -48,7 +49,7 @@ void pop(){
 	if(t==-1)
 		printf("Nothing to Pop...Stack Underflow\n");
 	else{
-		int d=stack[t];
+		printf("Deleted Element is %d\n",stack[t]);
 		--t;
 	}
 }
